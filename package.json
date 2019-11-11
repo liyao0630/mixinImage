@@ -1,0 +1,19 @@
+{
+  "name": "8.sdf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node pvr2ToPng3.js",
+    "output": "node output.js",
+    "entry": "node entry.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "canvas": "^2.6.0",
+    "xml2js": "^0.4.22"
+  }
+}

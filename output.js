@@ -7,8 +7,6 @@ const { createCanvas, loadImage } = require('canvas')
 var entry = __dirname + '/test2/'
 var canvasWAdd = 10
 var canvasHAdd = 6
-// var 
-// console.log(fs.readFileSync(entry + 'guangquanxiaoguo .png', 'base64'));
 
 function xml(xmlFile) {
   let data = fs.readFileSync(entry + xmlFile);

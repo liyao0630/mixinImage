@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node pvr2ToPng3.js",
+    "start": "node pvr2ToPng4.js",
+    "start2": "node pvr2ToPng3.js",
     "output": "node output.js",
     "entry": "node entry.js"
   },

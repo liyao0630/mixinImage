@@ -11,16 +11,12 @@ function xml(xmlFile) {
 
   parser.parseString(data, function (err, result) {
     let spriteImg = result.TextureAtlas.$.imagePath
-
     forEachXml(result.TextureAtlas.sprite, spriteImg)
-
   });
 }
 
 function forEachXml(sprite, spriteImg) {
   let { n, x, y, w, h } = sprite[0].$
-  // canvasFn(spriteImg, n, -parseInt(x), -parseInt(y), parseInt(w), parseInt(h))
-  // return
   sprite.forEach(val => {
     let { n, x, y, w, h } = val.$
     canvasFn(spriteImg, n, -parseInt(x), -parseInt(y), parseInt(w), parseInt(h))

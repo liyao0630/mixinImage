@@ -5,8 +5,8 @@ var path = require('path');
 var { createCanvas, loadImage } = require('canvas')
 var parser = new xml2js.Parser()
 var path = require('path')
-var entry = __dirname + '/Res/'
-var output = __dirname + '/Res/'
+var entry = __dirname + '/test/'
+var output = __dirname + '/test/'
 var outputPlist = __dirname + '/plist/'
 var toPngSheet = '.png'
 var addImgPath = 'add.png'
@@ -56,8 +56,7 @@ let size = 1
 let page = 1
 let single = 0
 console.log(filesPath.pvr);
-console.log(`共 ${pvrTotal} prv文件`);
-// return 
+console.log(`共 ${pvrTotal} pvr文件`);
 splitPrvToPng(filesPath.pvr.slice(0, size))
 function splitPrvToPng(pvr) {
   pvr.forEach(async (files, index) => {
@@ -106,7 +105,7 @@ function splitPrvToPng(pvr) {
     var res = execSync(`/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/texturetool -e PVRTC -o ${prvPath} -f PVR ${pngPath}`)
     unlinkPng(pngPath)
     console.log(res.toString());
-    console.log(`共 ${pvrTotal} prv文件,已处理 ${++pvrCount},剩余 ${pvrTotal - pvrCount}`);
+    console.log(`共 ${pvrTotal} pvr文件,已处理 ${++pvrCount}`);
     if (++single === size) {
       single = 0
       let start = size * page

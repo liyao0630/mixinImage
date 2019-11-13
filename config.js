@@ -1,8 +1,9 @@
 module.exports = {
   addImgPath: 'add.png',
-  entry: __dirname + '/test/',
+  addW: 1,
+  addH: 1,
+  // entry: __dirname + '/test/',
+  entry: __dirname + '/Res_11.12/',
   pngSheet: '.png',
-  size: 1,
-  page: 1,
-  step: 0
+  rename: ''
 }

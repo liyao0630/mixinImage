@@ -1,7 +1,7 @@
 --
 -- created with TexturePacker (http://www.codeandweb.com/texturepacker)
 --
--- $TexturePacker:SmartUpdate:1aebaa2fde3aeb8779b73fe0cee03bfa:1/1$
+-- $TexturePacker:SmartUpdate:051d4e5804022558a593058d024e1433:1/1$
 --
 -- local sheetInfo = require("mysheet")
 -- local myImageSheet = graphics.newImageSheet( "mysheet.png", sheetInfo:getSheet() )
@@ -15,11 +15,11 @@ SheetInfo.sheet =
     frames = {
     
         {
-            -- aperture
+            -- konglong_02
             x=0,
             y=0,
             width=1024,
-            height=704,
+            height=642,
 
             sourceX = 0,
             sourceY = 0,
@@ -29,13 +29,13 @@ SheetInfo.sheet =
     },
     
     sheetContentWidth = 1024,
-    sheetContentHeight = 704
+    sheetContentHeight = 642
 }
 
 SheetInfo.frameIndex =
 {
 
-    ["aperture"] = 1,
+    ["konglong_02"] = 1,
 }
 
 function SheetInfo:getSheet()

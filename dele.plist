@@ -1,7 +1,7 @@
 --
 -- created with TexturePacker (http://www.codeandweb.com/texturepacker)
 --
--- $TexturePacker:SmartUpdate:8bee605c1d9226e543b65d61bd8d2be8:1/1$
+-- $TexturePacker:SmartUpdate:45efa28f7db85db1a5c4231c3c8dc96b:1/1$
 --
 -- local sheetInfo = require("mysheet")
 -- local myImageSheet = graphics.newImageSheet( "mysheet.png", sheetInfo:getSheet() )
@@ -15,23 +15,27 @@ SheetInfo.sheet =
     frames = {
     
         {
-            -- jydt_4
+            -- chaptersbackground_1
             x=0,
             y=0,
-            width=1024,
-            height=1024,
+            width=512,
+            height=396,
 
+            sourceX = 0,
+            sourceY = 0,
+            sourceWidth = 512,
+            sourceHeight = 512
         },
     },
     
-    sheetContentWidth = 1024,
-    sheetContentHeight = 1024
+    sheetContentWidth = 512,
+    sheetContentHeight = 396
 }
 
 SheetInfo.frameIndex =
 {
 
-    ["jydt_4"] = 1,
+    ["chaptersbackground_1"] = 1,
 }
 
 function SheetInfo:getSheet()

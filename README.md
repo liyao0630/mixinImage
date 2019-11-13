@@ -7,4 +7,4 @@ addH 增加高
 
 entry 入口文件夹
 
-rename 调试过程中占用的文件名
+rename 调试占用名
